@@ -723,7 +723,7 @@
 
 
 // const obtenerInformacion = (materia)=>{
-	
+
 // 	if (materias[materia] !== undefined){
 // 		return [materias[materia],materia,materias];
 // 	} else {
