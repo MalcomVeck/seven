@@ -1,0 +1,68 @@
+
+body {
+	overflow-x: hidden;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+h1{
+    color: red;
+    font-size: 35px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 20px;
+}
+
+h2{
+    color: red;
+    font-size: 35px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card{
+    height: 25rem;
+    padding: 7px;
+    margin-left: 4rem;
+    margin-bottom: 1rem; 
+    margin-top: 1rem;
+} 
+.card-img-top{
+    height: 14rem;
+    width: 14rem;
+}
+.card-text{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.644);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 0 1rem 0 1rem;
+}
+.card-texta{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.644);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 0 1rem 0 1rem;
+}
+.card:hover {
+	border-color: #71a154;
+	box-shadow: 0px 0px 30px #317124
+}
+
+#btnConsultar{
+    align-items: center;
+	background: #71a154;
+	color: #fff;
+	border: none;
+	padding: 8px 25px;
+	font-size: 17px;
+	letter-spacing: 1px;
+    margin-left: 1.6rem;
+    margin-top: 1rem;
+    border-radius: 3%;
+} 
