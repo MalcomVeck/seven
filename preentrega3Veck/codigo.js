@@ -5,7 +5,7 @@ const productos = [
     {id:4, nombre:"Neoprene Mujer 4/3 Salty Dayz", descripcion:" Traje de mujer con cierre en el pecho y un forro térmico Graphene Recycler en el interior del pecho y los paneles traseros", precio:499.999, imagen:"neoprene-saltydayz-mujer.jpg", categoria:"trajes"},
 ]
 
-function renderProductos(productos){
+function renderProductos(){
     let contenidoHTML= "";
 
     for (const producto of productos) {
@@ -14,6 +14,7 @@ function renderProductos(productos){
                 <img src="assets/${producto.imagen}" class="card-img-top" height=400 alt="${producto.nombre}">
                 <div class="card-body text-center">
                     <p class="card-text">${producto.nombre}<br><span class="text-danger">${producto.precio}ARS</span></p>
+                    <p class="card-text"><button class="btn btn-dark rounded-pill" onclick="agregarProducto(${producto.id});">Agregar (+)</button></p>
                 </div>
             </div>
         </div>`;
@@ -22,4 +23,23 @@ function renderProductos(productos){
     document.getElementById("contenido").innerHTML = contenidoHTML;
 }
 
-renderProductos(productos);
+function agregarProducto(id){
+    const producto = productos.find(item => item.id == id);
+    const carrito = cargarCarritoLS();
+    carrito.push(producto);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    console.log("El producto se agregó al carrito");
+    totalCarrito();
+}
+
+function totalCarrito() {
+    const carrito = cargarCarritoLS();
+    document.getElementById("checkCarrito").innerHTML = carrito.length;
+}
+
+function cargarCarritoLS() {
+    return JSON.parse(localStorage.getItem("carrito")) || [];
+}
+
+renderProductos();
+totalCarrito();
