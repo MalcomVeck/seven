@@ -6,15 +6,17 @@ function renderCarrito() {
         contenidoHTML= `<table class="table">
         <tbody>
         <tr>
-        <td class="text-end" colspan="4"><button class="btn btn-danger btn-sm" onclick="vaciarCarrito();">Vaciar Carrito <i class="bi bi-recycle"></i></button></td>
+        <td class="text-end" colspan="6"><button class="btn btn-danger btn-sm" onclick="vaciarCarrito();">Vaciar Carrito <i class="bi bi-recycle"></i></button></td>
         </tr>`;
 
         for (const producto of carrito) {
             contenidoHTML += `<tr>
             <th><img src="assets/${producto.imagen}" alt="${producto.nombre}" width="80"></th>
             <th class="align-middle">${producto.nombre}</th>
-            <th class="text-center align-middle"><span class="text-danger">$${producto.precio} ARS</span></th>
-            <th class="text-end align-middle"><button class="btn btn-danger btn-sm" onclick="eliminarProducto(${producto.id});">Eliminar <i class="bi bi-trash3"></i></button></th>
+            <th class="text-center align-middle">Cantidad<br> ${producto.cantidad}</th>
+            <th class="text-center align-middle"><span class="text-danger">Unidad<br>$${producto.precio} ARS</span></th>
+            <th class="text-center align-middle"><span class="text-danger">subTotal<br>$${producto.precio * producto.cantidad} ARS</span></th>
+            <th class="text-end align-middle"><button class="btn btn-danger btn-sm" onclick="eliminarProducto(${producto.id})">Eliminar <i class="bi bi-trash3"></i></button></th>
             </tr>`;
         }
 
