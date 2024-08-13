@@ -3,7 +3,7 @@ function renderCarrito() {
     let contenidoHTML;
 
     if (totalProductos() > 0 ) {
-        contenidoHTML= `<table class="table">
+        contenidoHTML= `<table class="table border-top">
         <tbody>`;
         for (const producto of carrito) {
             contenidoHTML += `<tr>
@@ -17,15 +17,14 @@ function renderCarrito() {
             }
         contenidoHTML += `</tbody>
         <tfooter>
-        <td class="text-end align-middle" colspan="2"><button class="btn btn-danger btn-md" onclick="vaciarCarrito();">Vaciar Carrito <i class="bi bi-recycle"></i></button></td>
+        <td class="text-end align-middle" colspan="2"><button class="btn btn-danger btn-md" onclick="eliminarCarrito();">Vaciar Carrito <i class="bi bi-recycle"></i></button></td>
         <td class="text-end align-middle" colspan="3"><h4 class="text-danger" id="mostrarTotal"></h4></td>
         <td class="text-end" colspan="4"><button class="btn btn-success btn-lg" onclick="comprar();">COMPRAR <i class="bi bi-credit-card"></i></button></td>
         </tfooter>
         </table>`;
     } else {
         contenidoHTML = `<div class="alert alert-dark my-5 text-center" role="alert">
-        <h2>❌</h2>
-        <h3>No se encontraron productos en el carrito!</h3>
+        <h3>El carrito está vacio</h3>
         </div>`
     }
     document.getElementById("contenido").innerHTML = contenidoHTML;
