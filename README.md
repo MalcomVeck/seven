@@ -1,2 +1,4 @@
-# siete // JavaScript CoderHouse 
-Hola Javi buen día, bueno primero que nada gracias por ser tan buen profesor, hiciste que algo que es nuevo para mi y complicado sea mucho más entendible y llevadero, queria comentarte que en un inicio me plantie otro proyecto final pero cambie para la 3ra entrega por que convenimos con walter el ayudante que el ecommerce tenia mas contenido aplicable e iba a ser más rico en conocimiento al fin, bueno eso, no quiero que pienses que me copié de los after y menos que fue de vago jaj, en fin el link que te mando es de mi repo github pero aún no subo la entrega, hago entrega ahora en la pág por que ya hubo un error y me cerraron el plazo antes, asi que por las dudas, lo mando ahora, abradezco tu comprención y tu tiempo, pd: Que pena que no te dieron horas de react pronto, me hubiese gustado seguir con vos, mas allá de la nota que me pongas, por que entiendo es tu trabajo,  te deseo mucho éxito ! Abrazoo ! 
+# siete // JavaScript CoderHouse
+
+PROFE CREÉ OTRO REPO CON EL PAGES ACTIVADO PARA LA ENTREGA = 
+https://malcomveck.github.io/Billabong-ecommerse/index.html
